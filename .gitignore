@@ -1,0 +1,40 @@
+# Build
+/build/
+!/src/
+
+# Gradle
+.gradle/
+/build/
+!gradlew
+!gradlew.bat
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+
+# VS Code
+.vscode/
+
+# Sistema Operativo
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Archivos temporales
+*.tmp
+
+# Spring Boot properties
+src/main/resources/application.properties
+src/main/resources/application.yml
+
+# Entorno
+.env
+
+# Java
+*.class
+
+# Otros
+.idea/
+*.iml
+*.ipr
+*.iws
