@@ -1,3 +1,18 @@
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# Gradle
+.gradle/
+build/
+
+# Java
+*.class
+=======
 # Build
 /build/
 !/src/
@@ -17,24 +32,7 @@
 .DS_Store
 Thumbs.db
 
+
 # Logs
 *.log
 
-# Archivos temporales
-*.tmp
-
-# Spring Boot properties
-src/main/resources/application.properties
-src/main/resources/application.yml
-
-# Entorno
-.env
-
-# Java
-*.class
-
-# Otros
-.idea/
-*.iml
-*.ipr
-*.iws
