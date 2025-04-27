@@ -1,3 +1,5 @@
+CREATE DATABASE IF NOT EXISTS tiendamotos_bd;
+USE tiendamotos_bd;
 CREATE TABLE cargos (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(100) NOT NULL,
@@ -53,6 +55,6 @@ CREATE TABLE servicio_moto (
     fecha_servicio DATE NOT NULL,
     comentarios VARCHAR(255),
     FOREIGN KEY (moto_id) REFERENCES motos(id),
-    FOREIGN KEY (servicio_id) REFERENCES servicios(id)
-    FOREIGN KEY (cargo_id) REFERENCES cargo_id(id)
+    FOREIGN KEY (servicio_id) REFERENCES servicios(id),
+    FOREIGN KEY (cargo_id) REFERENCES cargos(id)
 );
