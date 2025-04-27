@@ -49,8 +49,10 @@ CREATE TABLE servicio_moto (
     id INT AUTO_INCREMENT PRIMARY KEY,
     moto_id INT,
     servicio_id INT,
+    cargo_id INT,
     fecha_servicio DATE NOT NULL,
     comentarios VARCHAR(255),
     FOREIGN KEY (moto_id) REFERENCES motos(id),
     FOREIGN KEY (servicio_id) REFERENCES servicios(id)
+    FOREIGN KEY (cargo_id) REFERENCES cargo_id(id)
 );
