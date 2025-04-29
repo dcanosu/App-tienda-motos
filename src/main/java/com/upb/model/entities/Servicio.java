@@ -1,5 +1,4 @@
 package com.upb.model.entities;
-import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -17,13 +16,11 @@ import lombok.Setter;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "motos")
-public class Moto {
+@Table(name = "servicios")
+public class Servicio {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     String marca;
-    String modelo;
-    String placa;
-    @Column(name = "cliente_id")
-    Long fk_cliente_id;
+    String descripcion;
+    Double precio;
 }
