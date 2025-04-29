@@ -10,9 +10,6 @@ out/
 .gradle/
 build/
 
-# Java
-*.class
-=======
 # Build
 /build/
 !/src/
