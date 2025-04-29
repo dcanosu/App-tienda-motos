@@ -1,45 +1,52 @@
-
 # IntelliJ IDEA
 .idea/
 *.iml
 *.ipr
 *.iws
 out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+# VS Code
+.vscode/
 
 # Gradle
 .gradle/
 build/
-
-# Build
-/build/
-!/src/
-
-# Gradle
-.gradle/
-/build/
 !gradlew
 !gradlew.bat
 !gradle/wrapper/gradle-wrapper.jar
 !gradle/wrapper/gradle-wrapper.properties
-
-# VS Code
-.vscode/
+!**/src/main/**/build/
+!**/src/test/**/build/
+!/src/
 
 # Sistema Operativo
 .DS_Store
 Thumbs.db
 
-
-# Logs
+# Logs y archivos temporales
 *.log
-
-# Ignorar carpeta build
-/build/
-
-# Ignorar archivos .class
-*.class
-
-# Ignorar archivos temporales
 *.tmp
-*.log
 
+# Archivos adicionales
+HELP.md
+
+# Spring Tool Suite (STS)
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
