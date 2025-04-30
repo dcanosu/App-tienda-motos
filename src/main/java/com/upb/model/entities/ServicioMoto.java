@@ -24,15 +24,12 @@ import lombok.Setter;
 public class ServicioMoto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long moto_id;
-    Long servicio_id;
-    Long cargo_id;
-    Date fecha_servicio;
-    String comentarios;
+    Long id;
     @Column(name = "moto_id")
     Long fk_moto_id;
     @Column(name = "servicio_id")
     Long fk_servicio_id;
     @Column(name = "cargo_id")
-    Long fk_cargo_id;
+    Date fecha_servicio;
+    String comentarios;
 }

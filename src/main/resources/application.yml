@@ -1,10 +1,10 @@
 server:
-  port: 8080
+  port: 9090
 spring:
   application:
     name: empresa-upb
   datasource:
-    url: jdbc:mysql://localhost:3306/restaurante_upb
+    url: jdbc:mysql://localhost:3306/tiendamotos_bd
     username: root
     password: Morgan95*
     driver-class-name: com.mysql.cj.jdbc.Driver

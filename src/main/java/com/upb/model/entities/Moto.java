@@ -21,6 +21,7 @@ import lombok.Setter;
 public class Moto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    Long id;
     String marca;
     String modelo;
     String placa;
