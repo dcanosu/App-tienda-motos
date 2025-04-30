@@ -20,6 +20,7 @@ import lombok.Setter;
 public class Servicio {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    Long id;
     String marca;
     String descripcion;
     Double precio;
